@@ -4,9 +4,17 @@
 //
 //  Created by Clifford Ribaudo on 12/21/20.
 //  Copyright © 2021 Clifford Ribaudo. MIT License
-//
-//  Up to you to decide how _MACOS_ and _IOS_ get set.
-//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_OSX
+#import <AppKit/AppKit.h>
+#   define _MACOS_
+#elif TARGET_OS_IOS
+#import <UIKit/UIKit.h>
+#   define _IOS_
+#endif
+
 #ifdef _MACOS_
     #define IMAGE_OBJ       NSImage
     #define VIEW_OBJ        NSView
