@@ -1,0 +1,6 @@
+module PrintWKWebViewContent {
+    header "IphemerisWKWebView.h"
+    header "TiledImageView.h"
+    header "TiledImageViewPrintPageRenderer.h"
+    header "WKWebView+UtilityFunctions.h"
+}
