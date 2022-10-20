@@ -28,6 +28,8 @@
 #ifdef _MACOS_
     NSPrintOperation *po = [NSPrintOperation printOperationWithView:self];
     po.printInfo = pi;
+    po.showsPrintPanel = NO;
+    po.showsProgressPanel = NO;
     [po runOperation];
 #endif
 }
